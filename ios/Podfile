@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ReactNativeReference' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ReactNativeReference
+  pod 'React', :path => '../node_modules/react-native'
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  # Add new pods below this line
+  pod 'RNAnalytics', :path => '../node_modules/@segment/analytics-react-native'
+
+  target 'ReactNativeReferenceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'ReactNativeReference-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ReactNativeReference-tvOS
+
+  target 'ReactNativeReference-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
